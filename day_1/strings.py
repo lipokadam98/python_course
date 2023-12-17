@@ -18,4 +18,7 @@ msg = f'Hello, {name}'
 
 print(msg)
 
-#string methods
+print("Hello world!\nHello world!")
+
+#length of a string
+print(len(msg))
