@@ -35,14 +35,15 @@ def race(turtles: List[Turtle]):
             if check_winner(turtle):
                 has_winner = True
                 if user_bet == turtle.pencolor():
-                    print("You won!")
+                    print(f"You won with the color of {turtle.pencolor()}!")
                 else:
-                    print("You lost!")
+                    print(f"You lost against the color of {turtle.pencolor()}!")
+
+                screen.bye()
                 break
-            turtle.forward(random.randint(1, 5))
+            turtle.forward(random.randint(5, 10))
 
 
 turtle_list = create_turtles()
 
 race(turtle_list)
-screen.exitonclick()
